@@ -1,0 +1,24 @@
+include "biblio-standoc.rnc" {
+
+DocumentType =
+"policy-and-procedures" | "best-practices" | "supporting-document" | "report" | "legal" | "directives" | "proposal" |
+        "standard"
+
+editorialgroup = element editorialgroup {
+  committee+
+}
+
+BibDataExtensionType =
+  attribute schema-version { text }?,
+    doctype?, docsubtype?, editorialgroup, ics*, security?
+
+}
+
+committee = element committee {
+    attribute type { ( "technical" | "provisional" ) },
+    text
+}
+
+security = element security { text }
+
+
