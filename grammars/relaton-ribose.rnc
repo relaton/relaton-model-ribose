@@ -10,7 +10,7 @@ editorialgroup = element editorialgroup {
 
 BibDataExtensionType =
   attribute schema-version { text }?,
-    doctype?, docsubtype?, editorialgroup, ics*, security?
+    doctype?, docsubtype?, flavor, editorialgroup, ics*, security?
 
 }
 
