@@ -8,9 +8,9 @@ editorialgroup = element editorialgroup {
   committee+
 }
 
-BibDataExtensionType =
-  attribute schema-version { text }?,
-    doctype?, docsubtype?, flavor, editorialgroup, ics*, security?
+BibDataExtensionType &=
+    ## Security level classification. For example, "confidential", "client confidential"
+    security?
 
 }
 
