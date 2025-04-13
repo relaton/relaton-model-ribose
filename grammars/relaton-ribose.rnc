@@ -8,11 +8,11 @@ editorialgroup = element editorialgroup {
   committee+
 }
 
+}
+
 BibDataExtensionType &=
     ## Security level classification. For example, "confidential", "client confidential"
     security?
-
-}
 
 committee = element committee {
     attribute type { ( "technical" | "provisional" ) },
